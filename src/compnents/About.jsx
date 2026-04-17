@@ -6,7 +6,7 @@ const About = () => {
   return (
     <motion.div
       initial={{ opcity: 0, x: 200 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 2 }}
       whileInView={{ opcity: 1, x: 0 }}
       viewport={{ once: true }}
       className="flex flex-col items-center justify-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden"
@@ -46,17 +46,19 @@ const About = () => {
               <p>Ongoing Projects</p>
             </div>
           </div>
-          <p className="my-10 max-w-lg">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Voluptatibus tempore placeat ipsum similique esse, architecto
-            voluptas nulla, consequuntur aperiam doloribus eos a officia
-            explicabo quo in suscipit fuga nam non ipsam dolore possimus veniam!
-            Ipsum culpa neque porro magnam, iste itaque quis at dolore aliquid?
-            Nulla obcaecati inventore incidunt magni!
+          <p className="my-10 max-w-lg text-justify">
+            We are committed to delivering high-quality real estate solutions
+            that combine strategic locations, modern design, and long-term
+            value. Our focus is on creating residential and investment
+            properties that meet the evolving needs of today’s buyers while
+            maintaining strong potential for future growth. With a deep
+            understanding of the market, we carefully select and develop
+            properties that offer both comfort and practicality. Every project
+            is planned with attention to detail—from layout and construction
+            quality to accessibility and surrounding infrastructure. We believe
+            that real estate is more than just property—it’s about building
+            spaces where people live, grow, and invest with confidence.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-2 rounded">
-            Learn More
-          </button>
         </div>
       </div>
     </motion.div>

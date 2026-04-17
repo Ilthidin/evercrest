@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <motion.div
       initial={{ opcity: 0, x: 100 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 2 }}
       whileInView={{ opcity: 1, x: 0 }}
       viewport={{ once: true }}
       className="container mx-auto py-10 lg:px-32 w-full overflow-hidden"
@@ -14,7 +14,7 @@ const Testimonials = () => {
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
         Customer
-        <span className="underline underline-offset-4 decoration-1 font-light">
+        <span className="underline underline-offset-4 decoration-1 font-light ml-2">
           Testimonials
         </span>
       </h1>
@@ -25,7 +25,7 @@ const Testimonials = () => {
         {testimonialsData.map((testimonial, index) => (
           <div
             key={index}
-            className="max-w-[340px] shadow-lg rounded px-8 py-12 text-center"
+            className="max-w-[340px] shadow-lg rounded px-10 py-12 text-center"
           >
             <img
               className="w-20 h-20 rounded-full mx-auto mb-4"
@@ -41,7 +41,7 @@ const Testimonials = () => {
                 <img key={index} src={assets.star_icon} alt="" />
               ))}
             </div>
-            <p className="text-gray-600">"{testimonial.text}"</p>
+            <p className="text-gray-600 text-justify">"{testimonial.text}"</p>
           </div>
         ))}
       </div>

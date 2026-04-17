@@ -4,7 +4,7 @@ import About from "./compnents/About";
 import Projects from "./compnents/Projects";
 import Testimonials from "./compnents/Testimonials";
 import Contact from "./compnents/Contact";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import Footer from "./compnents/Footer";
 
 

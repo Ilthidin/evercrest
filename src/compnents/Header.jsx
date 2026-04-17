@@ -1,7 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { motion } from "motion/react";
-import headerImg from "../assets/header_img.png"; // if stored in src/assets
+import headerImg from "../assets/header_img.webp"; // if stored in src/assets
+
+const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
 const Header = () => {
   return (
@@ -13,7 +20,7 @@ const Header = () => {
       <Navbar />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="container text-center mx-auto py-4 px-6 md:px-20 lg:px-32 text-white"
@@ -22,12 +29,12 @@ const Header = () => {
           Explore homes that fit your dreams
         </h2>
         <div className="space-x-6 mt-16">
-          <a href="#Projects" className="border border-white px-8 py-3 rounded">
-            Projects
-          </a>
-          <a href="#Contact" className="bg-blue-500 px-8 py-3 rounded">
-            Contact Us
-          </a>
+          <button onClick={() => scrollToSection('Projects')} className="border border-white px-8 py-3 rounded cursor-pointer hover:bg-gray-600">
+            Our Projects
+          </button>
+          <button onClick={() => scrollToSection('About')} className="bg-blue-600 px-8 py-3 rounded cursor-pointer hover:bg-blue-700">
+            Explore Now
+          </button>
         </div>
       </motion.div>
     </div>

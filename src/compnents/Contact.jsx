@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <motion.div
       initial={{ opcity: 0, x: -200 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 2 }}
       whileInView={{ opcity: 1, x: 0 }}
       viewport={{ once: true }}
       className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
@@ -40,8 +40,8 @@ const Contact = () => {
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
         Contact
-        <span className="underline underline-offset-4 decoration-1 font-light">
-          With Us
+        <span className="underline underline-offset-4 decoration-1 font-light ml-2">
+        Our Team
         </span>
       </h1>
       <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto">
@@ -82,7 +82,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button className="bg-blue-600 text-white py-2 px-12 mb-10 rounded">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-12 mb-10 rounded">
           {result ? result : "Send Message"}
         </button>
       </form>

@@ -5,17 +5,17 @@ import menu_icon from './menu_icon.svg'
 import star_icon from './star_icon.svg'
 import left_arrow from './left_arrow.svg'
 import right_arrow from './right_arrow.svg'
-import header_img from './header_img.png'
-import brand_img from './brand_img.png'
-import project_img_1 from './project_img_1.jpg'
-import project_img_2 from './project_img_2.jpg'
-import project_img_3 from './project_img_3.jpg'
-import project_img_4 from './project_img_4.jpg'
-import project_img_5 from './project_img_5.jpg'
-import project_img_6 from './project_img_6.jpg'
-import profile_img_1 from './profile_img_1.png'
-import profile_img_2 from './profile_img_2.png'
-import profile_img_3 from './profile_img_3.png'
+import header_img from './header_img.webp'
+import brand_img from './brand_img.webp'
+import project_img_1 from './project_img_1.webp'
+import project_img_2 from './project_img_2.webp'
+import project_img_3 from './project_img_3.webp'
+import project_img_4 from './project_img_4.webp'
+import project_img_5 from './project_img_5.webp'
+import project_img_6 from './project_img_6.webp'
+import profile_img_1 from './profile_img_1.webp'
+import profile_img_2 from './profile_img_2.webp'
+import profile_img_3 from './profile_img_3.webp'
 
 export const assets = {
     logo,
@@ -80,22 +80,22 @@ export const projectsData = [
         image: profile_img_1,
         alt: "Portrait of Donald Jackman",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "The entire process felt smooth and well-managed from start to finish. They provided clear guidance at every step and made sure I understood all my options before making a decision. I couldn’t have asked for a more reliable team."
     },
     {
         name: "Richard Nelson",
-        title: "UI/UX Designer",
+        title: "Model",
         image: profile_img_2,
         alt: "Portrait of Richard Nelson",
         rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "I was impressed by how quickly they understood what I was looking for. Every recommendation matched my preferences, and the final property exceeded my expectations in both quality and location."
     },
     {
         name: "James Washington",
-        title: "Co-Founder",
+        title: "Composer",
         image: profile_img_3,
         alt: "Portrait of James Washington",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "What stood out the most was their professionalism and transparency. There were no hidden surprises, and they stayed responsive throughout the entire process. It made a big difference in my confidence as a buyer."
     }
 ];
