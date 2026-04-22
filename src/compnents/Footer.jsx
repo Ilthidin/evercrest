@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Left */}
         <div className="w-full md:h-1/3 mb-8 md:mb-0">
           <img src={assets.logo_dark} alt="" />
-          <p className="text-gray-400 mt-4 md:w-1/2 text-justify">
+          <p className="text-gray-400 mt-4 lg:w-1/2 md:w-5/6 text-justify">
             Building trust through thoughtfully designed homes and strategic
             developments. We specialize in delivering high-quality residential
             and investment properties that combine modern design, functional
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
 
         {/* Middle */}
-        <div className="w-full md:w-1/5 mb-8 md:mb-0">
+        <div className="w-full md:w-1/3 lg:w-1/5 mb-8 md:mb-0">
           <h3 className="text-white text-lg font-bold mb-4">Company</h3>
           <ul className="flex flex-col gap-2 text-gray-400">
             <li
@@ -93,7 +93,7 @@ const Footer = () => {
 
       {/* Bottom */}
       <div className="border-t border-gray-700 py-4 mt-10 text-center text-gray-500">
-        Copyright {new Date().getFullYear()} Solidev. All Rights Reserved.
+        Copyright {new Date().getFullYear()} Evercrest Realty. All Rights Reserved.
       </div>
     </div>
   );

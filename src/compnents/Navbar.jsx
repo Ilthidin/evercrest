@@ -33,7 +33,7 @@ const Navbar = () => {
         <img src={assets.logo} alt="Logo" />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-7 text-white">
+        <ul className="hidden lg:flex gap-7 text-white">
           {NAV_ITEMS.map((item) => (
             <li
               key={item.name}
@@ -45,7 +45,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="hidden md:block bg-white px-8 py-2 rounded-full cursor-pointer" onClick={() => scrollToSection('Contact')}>
+        <button className="hidden lg:block bg-white px-4 lg-px-8 py-1 lg:py-2 rounded-full cursor-pointer hover:bg-gray-400" onClick={() => scrollToSection('Contact')}>
           Contact Us
         </button>
 
@@ -53,14 +53,14 @@ const Navbar = () => {
         <img
           onClick={() => setShowMobileMenu(true)}
           src={assets.menu_icon}
-          className="md:hidden w-7 cursor-pointer"
+          className="lg:hidden w-7 cursor-pointer"
           alt="menu"
         />
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 right-0 bottom-0 bg-white transition-all ${
+        className={`lg:hidden fixed top-0 right-0 bottom-0 bg-white transition-all ${
           showMobileMenu ? "w-full" : "w-0 overflow-hidden"
         }`}
       >

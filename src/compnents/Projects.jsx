@@ -89,7 +89,7 @@ const Projects = () => {
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden"
+      className="container mx-auto py-4 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden"
       id="Projects"
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-center">
@@ -136,7 +136,7 @@ const Projects = () => {
                   <div className="bg-white shadow-md mt-2 p-2 text-center min-h-22">
                     <h2 className="font-semibold">{project.title}</h2>
                     <p className="text-sm text-gray-500">
-                      {project.price} | {project.location}
+                    {project.location}
                     </p>
                   </div>
                 </div>
